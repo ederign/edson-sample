@@ -2,13 +2,14 @@ $(document).ready(function () {
     var label_id = getUrlParameter('label_id');
     var breadcrumb_label = getUrlParameter('breadcrumb_label');
     filterResults(label_id, breadcrumb_label);
+
+    $('.breadcrumbs #breadcrumb-value').text(breadcrumb_label)
 });
 function filterResults(label_id, breadcrumb_label) {
     $("#results > *").css('display', 'none');
     $("#results > #" + label_id).css('display', '');
-
-    $('.breadcrumbs #breadcrumb-value').text(breadcrumb_label)
 }
+
 function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
             sURLVariables = sPageURL.split('&'),
