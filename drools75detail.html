@@ -74,12 +74,20 @@
             </ol>
         </div>
     </div>
-    <div class="content">
-        <div id="results">  <!-- ponto de partida da filtragem -->
-            <div id="all-tests" class="container">
-                <h3>All tests in detail</h3>
-                <p>Results from all the tests in the TCK</p>
+    <div class="content container">
+        <div>
+        <label>Filter By: </label>
+        <select id="label-filter" class="combobox">
+            <option value="all-tests">All Tests</option>
+            <option value="business-knowledge-model">Business Knowledge Model</option>
+            <option value="compliance-level-2">Compliance Level 2</option>
+        </select>
 
+        </div>
+        <div id="results">  <!-- ponto de partida da filtragem -->
+
+
+            <div id="all-tests">
                 <div class="table-responsive">
                     <table class="table table-condensed table-bordered table-striped table-hover">
                         <thead>
@@ -724,8 +732,7 @@
             </div>
 
 
-            <div id="business-knowledge-model" class="container">
-                <h3 id="lbl0">All tests for label: Business Knowledge Model</h3>
+            <div id="business-knowledge-model" >
 
                 <div class="table-responsive">
                     <table class="table table-condensed table-bordered table-striped table-hover">
@@ -879,8 +886,7 @@
             </div>
 
 
-            <div id="compliance-level-2" class="container">
-                <h3 id="lbl1">All tests for label: Compliance Level 2</h3>
+            <div id="compliance-level-2" >
 
                 <div class="table-responsive">
                     <table class="table table-condensed table-bordered table-striped table-hover">
